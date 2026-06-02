@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "Fano Summary",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "https://cloud.fano.ai/wp-content/uploads/2025/12/Fano-Cloud_Mono_White-2.png",
+    "light": "https://cloud.fano.ai/wp-content/uploads/2025/12/group-1437253359.png"
   },
   "favicon": "/favicon.svg",
   "colors": {
@@ -45,11 +45,8 @@
       "group": "Meetings",
       "pages": [
         "meetings/recording",
-        "meetings/upload",
         "meetings/summaries",
-        "meetings/templates",
-        "meetings/transcripts",
-        "meetings/playback"
+        "meetings/transcripts"
       ]
     },
     {
@@ -77,7 +74,7 @@
     }
   ],
   "footerSocials": {
-    "website": "https://fanocloud.com",
+    "website": "https://cloud.fano.ai/summary-agent/",
     "linkedin": "https://www.linkedin.com/company/fano-labs"
   }
 }
