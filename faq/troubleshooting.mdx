@@ -1,0 +1,87 @@
+---
+title: "Troubleshooting"
+description: "Solutions for common issues with Fano Memos."
+---
+
+## Meeting bot issues
+
+<AccordionGroup>
+
+  <Accordion title="The Fano bot didn't join my meeting">
+    Check the following:
+
+    - **Calendar connected?** Go to **Settings → Integration** and confirm Microsoft Outlook shows "Connected."
+    - **Auto-join enabled?** Go to **Settings → Bot Preferences** and make sure Auto-join Mode is set to **"Join all meetings."**
+    - **Meeting has a video link?** The calendar event must include a Teams, Zoom, or Google Meet join link. Events without a video link are skipped.
+    - **Meeting started on time?** The bot joins when the scheduled meeting time begins. If the meeting started early or the time was changed, the bot may miss it.
+  </Accordion>
+
+  <Accordion title="The bot joined but no summary was generated">
+    If the meeting was very short (under a minute) or had no meaningful speech, the AI may not generate a summary. You'll see a message indicating there wasn't enough content to summarize.
+
+    If the meeting had substantial discussion and no summary appeared, try refreshing the page. If the issue persists, contact [support@fano.ai](mailto:support@fano.ai).
+  </Accordion>
+
+  <Accordion title="The bot appears but isn't recording">
+    Make sure the bot has permission to access meeting audio. In some video conferencing setups, the meeting host may need to admit the bot from the waiting room or grant recording permissions.
+  </Accordion>
+
+</AccordionGroup>
+
+## Transcript and summary issues
+
+<AccordionGroup>
+
+  <Accordion title="Speaker labels are wrong or inconsistent">
+    Speaker identification is based on voice detection and may not always be perfect, especially in meetings with many participants, background noise, or people speaking over each other. This is a known limitation that improves with meeting audio quality.
+  </Accordion>
+
+  <Accordion title="The summary is in the wrong language">
+    Check your **Summary Language** setting in **Settings → Profile & Preferences**. Changing this setting affects future summaries. To regenerate an existing summary in the new language, switch the template dropdown to any template — it will regenerate in your updated language.
+  </Accordion>
+
+  <Accordion title="The transcript is missing parts of the conversation">
+    If participants were speaking very softly, using a poor microphone, or there was significant background noise, some speech may not be captured. For best results, ensure all participants have clear audio input.
+  </Accordion>
+
+</AccordionGroup>
+
+## Account and access issues
+
+<AccordionGroup>
+
+  <Accordion title="I didn't receive an invitation email">
+    Check your spam, junk, or promotions folder. The email comes from Fano with the subject "You've been invited to join [Company Name] on Fano Summary Agent." If you still can't find it, ask your company admin to verify the email address and resend the invitation.
+  </Accordion>
+
+  <Accordion title="I forgot my password">
+    On the login page at [meetings.fanocloud.com](https://meetings.fanocloud.com), click **"Forgot Password"** and follow the instructions to reset it via email.
+  </Accordion>
+
+  <Accordion title="I can't change my email address">
+    Your email address is set by your company admin and cannot be changed from your profile. Contact your admin to update it.
+  </Accordion>
+
+</AccordionGroup>
+
+## Calendar and integration issues
+
+<AccordionGroup>
+
+  <Accordion title="Calendar connection failed">
+    Try disconnecting and reconnecting in **Settings → Integration**. Make sure you're granting the required permissions during the Microsoft sign-in flow. If pop-ups are blocked in your browser, allow them for the Fano Memos domain.
+  </Accordion>
+
+  <Accordion title="My meetings don't appear in the sidebar">
+    Meetings only appear after the Fano bot has joined and recorded them. If your calendar is connected but meetings aren't showing up, check that:
+
+    - The meetings have video call links in the calendar event.
+    - Auto-join Mode is set to "Join all meetings."
+    - The meetings have actually started (future meetings won't appear until recorded).
+  </Accordion>
+
+</AccordionGroup>
+
+---
+
+Still stuck? Email us at [support@fano.ai](mailto:support@fano.ai) and we'll help you out.

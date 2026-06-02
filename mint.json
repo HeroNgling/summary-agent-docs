@@ -1,0 +1,93 @@
+{
+  "$schema": "https://mintlify.com/schema.json",
+  "name": "Fano Memos",
+  "logo": {
+    "dark": "/logo/dark.svg",
+    "light": "/logo/light.svg"
+  },
+  "favicon": "/favicon.svg",
+  "colors": {
+    "primary": "#2563EB",
+    "light": "#60A5FA",
+    "dark": "#1D4ED8",
+    "anchors": {
+      "from": "#2563EB",
+      "to": "#1D4ED8"
+    }
+  },
+  "topbarLinks": [
+    {
+      "name": "Sign In",
+      "url": "https://meetings.fanocloud.com"
+    }
+  ],
+  "topbarCtaButton": {
+    "name": "Get Started",
+    "url": "https://meetings.fanocloud.com"
+  },
+  "tabs": [
+    {
+      "name": "Help Center",
+      "url": "getting-started"
+    },
+    {
+      "name": "Admin Guide",
+      "url": "admin"
+    }
+  ],
+  "anchors": [
+    {
+      "name": "Contact Support",
+      "icon": "envelope",
+      "url": "mailto:support@fano.ai"
+    }
+  ],
+  "navigation": [
+    {
+      "group": "Getting Started",
+      "pages": [
+        "getting-started/introduction",
+        "getting-started/quickstart",
+        "getting-started/connect-calendar"
+      ]
+    },
+    {
+      "group": "Meetings",
+      "pages": [
+        "meetings/recording",
+        "meetings/upload",
+        "meetings/summaries",
+        "meetings/templates",
+        "meetings/transcripts",
+        "meetings/playback"
+      ]
+    },
+    {
+      "group": "Settings",
+      "pages": [
+        "settings/profile",
+        "settings/integrations",
+        "settings/bot-preferences",
+        "settings/usage"
+      ]
+    },
+    {
+      "group": "Admin Guide",
+      "pages": [
+        "admin/overview",
+        "admin/inviting-members"
+      ]
+    },
+    {
+      "group": "Support",
+      "pages": [
+        "faq/general",
+        "faq/troubleshooting"
+      ]
+    }
+  ],
+  "footerSocials": {
+    "website": "https://fanocloud.com",
+    "linkedin": "https://www.linkedin.com/company/fano-labs"
+  }
+}
